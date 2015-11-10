@@ -1,0 +1,198 @@
+/* 
+    Created on : Mar 2, 2014, 11:56:16 AM
+    Author     : johnink
+*/
+
+body {
+    background:#192e4f;
+    background-image:url("../images/background.jpg");
+    background-repeat:repeat;
+}
+.container{
+    margin-top:5em;
+    margin-bottom:5em;
+}
+
+#mainwrapper {
+    background:#fff4d1;
+    box-shadow: 10px 45px 20px rgba(0,0,75,0.30);
+}
+
+#headtitle h1{
+    font-family: 'Tienne', serif;
+    font-size:87px;
+    color:#ffdb69;
+    margin-bottom:.3em;
+    text-shadow: 3px 8px 8px rgba(0,0,75,0.30);
+    /* text-align:center; */
+}
+
+#top {
+    background-image:url(../images/top2.png);
+    background-size:100%;
+    background-repeat:repeat-x;
+    text-align: center;
+    height:55px;
+    font-size:medium;
+    line-height:3;
+    font-family: 'Tienne', serif;
+    box-shadow: 10px 45px 20px rgba(0,0,75,0.30);
+}
+
+
+/* Image gallery */
+
+#imageviewer{
+    opacity:0;
+    display:none;
+    position:relative;
+    text-align:center;
+}
+
+#imageviewer span{display:block;margin-bottom:1em;text-decoration:underline;cursor:pointer;}
+
+.bigimage{
+    margin: 0 auto; 
+    position: static;
+    max-width:600px;
+    max-height:500px;
+}
+
+#img1,#img2,
+#img3,#img4,
+#img5,#img6,
+#img7,#img8,
+#img9,#img10,
+#img11,#img12{
+    display:none;
+}
+
+/*color picker*/
+
+#colorpicker{
+    display:none;
+}
+
+#backgroundcolorpicker{
+    background:#aaa;
+    padding-top:1em;
+    padding-bottom:.5em;
+    margin-bottom:2em;
+}
+
+.outercolor{
+    position:relative;
+}
+
+.canvascolor{
+    overflow:hidden;
+    height:55px;
+    margin-bottom:.5em;
+    position:relative;
+}
+
+div.outercolor.lastone{
+    margin-right:40px
+}
+
+.colortitle{
+    position:absolute;
+    top:0;
+    left:100%;
+    border: #ccc 2px solid;
+    z-index:100;
+    padding:5px;
+    border-radius:4px;
+    background:#fff;
+    overflow:hidden;
+   /*display:none;*/
+   opacity:0;
+   color:#777;
+   height:0px;
+   width:0px;
+   transition: .2s;
+}
+.outercolor:hover .colortitle{
+    display:block;
+    z-index:150;
+    opacity:1;
+    width:75px;
+    height:auto;
+}
+
+/* Main Page */
+
+#mug{position:relative;height:22em}
+#imgmug{position:absolute;top:-100px;right:15px;}
+
+#chooseyourtarp{
+    text-align:center;
+    font-size:15px;
+}
+
+h3{font-size:20px;font-weight:bold;line-height:1;font-family: 'Tienne', serif;}
+.about h3{font-size:18px;}
+
+.tarpbutton{
+    height:2em;
+    background:#ffdb69;
+    border: 2px #b98b00 solid;
+    border-radius:15px;
+    line-height:1.8;
+    padding-top:5px;
+    padding-bottom:5px;
+    transition:.2s ease-in-out;
+    cursor:hand;cursor:pointer
+}
+
+.tarpbutton:hover{
+    background:#b98b00;
+    border: 2px #ffdb69 solid;
+    color:#fff4d1;
+}
+
+.tarpbutton:active{
+    background:#000;
+    border: 2px #b98b00 solid;
+    transition:0s;
+}
+
+.changything{
+    line-height:1.1;
+    margin-top:1em;
+    position:relative;
+    text-align:justify;
+}
+
+.changything div{position:absolute;}
+
+.about{z-index:1;display:block;}
+
+.Oilrigtarps,.Boattarps{opacity:0;top:10px;z-index:0;display:none;}
+
+.backlink {text-decoration:underline;color:#000;cursor:hand;cursor:pointer;display:block;line-height:2;float:right;}
+.backlink:hover{color:#888}
+.backlink:active{color:#777;}
+
+#rule{text-align:center;}
+
+#imagechangy{margin-top:2em;position:relative;height:125px;}
+#oilriggallery, #boatgallery{position:absolute;top:-10px;}
+
+.gallery{height:125px;overflow:hidden;position:relative}
+.bordered{height:117px;overflow:hidden;border:4px #b98b00 solid;cursor:hand;cursor:pointer}
+.bordered:hover{border:4px #ffdb69 solid; transition:.4s ease-in-out;}
+.bordered:active{height:95%;width:95%;border:4px #fff solid;transition:0s;}
+.gallery img{width:125%;margin-left:-20px;}
+.gallery img:hover{width:123%; transition:.4s ease-in-out}
+.gallery img:active{width:120%;transition:0s;}
+
+#bottom {
+    background-image:url(../images/bottom2.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    text-align: center;
+    height:55px;
+}
+
+.gridtest{background:tomato;height:4em;}
